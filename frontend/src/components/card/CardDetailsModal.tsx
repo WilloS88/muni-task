@@ -18,7 +18,7 @@ export const CardDetailsModal = ({
     isOpen={isOpen}
     onRequestClose={onClose}
     contentLabel="Issue Details"
-    className="mx-auto mt-10 max-h-[80vh] w-full max-w-3xl overflow-auto rounded bg-white p-6 shadow-lg outline-none"
+    className="mx-3 mt-10 max-h-[80vh] w-full max-w-3xl overflow-auto rounded bg-white p-6 shadow-lg outline-none"
     overlayClassName="fixed inset-0 backdrop-blur-md flex justify-center items-start z-50"
   >
     {issue && (
@@ -29,7 +29,7 @@ export const CardDetailsModal = ({
         >
           Close
         </button>
-        <div>
+        <div className="mt-3">
           <h2 className="text-2xl font-bold">{issue.title}</h2>
           <p className="mt-2">
             <strong>First Message:</strong>

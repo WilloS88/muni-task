@@ -69,8 +69,8 @@ export const CardList = ({ onOpenModal }: CardListProps) => {
               className="my-4 border-t border-gray-200 bg-white px-4 py-3 sm:px-6"
               aria-label="Pagination"
             >
-              <div className="flex flex-col sm:flex-row items-center justify-between">
-                <div className="flex flex-col sm:flex-row items-center gap-2">
+              <div className="flex flex-col items-center justify-between sm:flex-row">
+                <div className="flex flex-col items-center gap-2 sm:flex-row">
                   <p className="text-sm text-gray-700">
                     Showing{" "}
                     <span className="font-medium">{startIndex + 1}</span> to{" "}
@@ -103,12 +103,16 @@ export const CardList = ({ onOpenModal }: CardListProps) => {
                           }
                         }
                       }}
-                      className="w-16 border border-gray-300 rounded p-1"
+                      className="w-16 rounded border border-gray-300 p-1"
                     />
+                    <p>
+                      Make sure to press{" "}
+                      <span className="font-bold uppercase">enter</span>
+                    </p>
                   </div>
                 </div>
 
-                <div className="flex flex-1 justify-between sm:justify-end mt-2 sm:mt-0">
+                <div className="mt-2 flex flex-1 justify-between sm:mt-0 sm:justify-end">
                   <button
                     onClick={() =>
                       setCurrentPage((prev) => Math.max(prev - 1, 1))

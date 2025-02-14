@@ -10,7 +10,7 @@ load_dotenv()
 
 token = os.getenv("GITHUB_TOKEN")
 if not token:
-    raise ValueError("Není nastaven GITHUB_TOKEN")
+    raise ValueError("Not set up GITHUB_TOKEN")
 
 g = Github(token)
 
